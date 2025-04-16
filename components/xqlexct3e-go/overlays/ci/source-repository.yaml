@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: xqlexct3e-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/xqlexct3e-go

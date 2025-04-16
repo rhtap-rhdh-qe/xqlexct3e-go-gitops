@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: xqlexct3e-go-gitops
+  description: This is GitOps manifest for xqlexct3e-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=xqlexct3e-go
+    backstage.io/kubernetes-id: xqlexct3e-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: xqlexct3e-go
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:xqlexct3e-go
